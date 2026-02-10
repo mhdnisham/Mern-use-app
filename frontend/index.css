@@ -1,0 +1,55 @@
+/* Reset Default Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Root Container */
+#root {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+}
+
+/* Card Style (For Your Components) */
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e73df;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #2e59d9;
+  transform: scale(1.05);
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
