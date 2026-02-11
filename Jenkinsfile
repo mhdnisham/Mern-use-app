@@ -45,7 +45,7 @@ pipeline {
 
         stage('Run Frontend') {
             steps {
-                sh 'docker run -d -p 3000:3000 --name frontend-container mern-frontend'
+                sh 'docker run -d -p 80:80 --name frontend-container mern-frontend'
             }
         }
 
