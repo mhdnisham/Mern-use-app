@@ -25,13 +25,11 @@ FROM nginx:alpine AS production
 # The 'build' or 'dist' folder name depends on your project's build output
 COPY --from=builder /app/build /usr/share/nginx/html
 
-# Copy a custom nginx configuration if needed, otherwise default is fine for static sites
-COPY nginx.conf /etc/nginx/nginx.conf
 
 # Expose port 80 for the Nginx server
 EXPOSE 80
 
 
 # The default command for nginx:alpine runs Nginx
-CMD [ "nginx", "-g" , "deamon off;" ]
+CMD [ "nginx", "-g" , "daemon off;" ]
 
