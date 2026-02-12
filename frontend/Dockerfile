@@ -23,7 +23,7 @@ FROM nginx:alpine AS production
 
 # Copy the built files from the builder stage to Nginx's serving directory
 # The 'build' or 'dist' folder name depends on your project's build output
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=builder /app/dist /usr/share/nginx/html
 
 
 # Expose port 80 for the Nginx server
