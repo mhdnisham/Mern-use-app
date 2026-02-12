@@ -1,11 +1,11 @@
 # --- Stage 1: Build the application ---
-FROM node:20-alpine As build
+FROM node:20-alpine As builder
 
 # Set the working directory
 WORKDIR /app
 
 # Copy package.json and package-lock.json to leverage Docker cache
-COPY packages*.json ./
+COPY package*.json ./
 
 # Install dependencies
 RUN npm install
