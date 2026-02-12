@@ -14,7 +14,7 @@ mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('MongoDB Connected ✅'))
   .catch((err) => console.error(err));
 // User model
-const User = require('./models/User');
+const User = require('./models/user');
 
 // Routes
 app.get('/api/users', async (req, res) => {
